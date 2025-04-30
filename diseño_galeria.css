@@ -1,0 +1,55 @@
+/* Estilo general para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #ffcccb; /* Rosa claro */
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #ff1493; /* Rosa fuerte */
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Estilo de la galería */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.imagen-container {
+    border: 5px solid #ffb6c1; /* Rosa claro */
+    border-radius: 8px;
+    padding: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagen-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.imagen:active {
+    transform: scale(0.98);
+}
